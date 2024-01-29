@@ -29,9 +29,7 @@ robot_ee_frame = sg.Axes(length=0.1, pose=Tee)
 
 
 #Tet = robot.fkine(robot.q) *sm.SE3.Rz(0.0)
-Tet = robot.fkine(robot.q) *sm.SE3.Rz(np.pi/2)
-
-#Tet = robot.fkine(robot.q) *sm.SE3.Rz(np.pi/4)*sm.SE3.Tx(0.05) * sm.SE3.Ty(0.02) * sm.SE3.Tz(0.01)
+Tet = robot.fkine(robot.q) *sm.SE3.Rz(np.pi/4)*sm.SE3.Tx(0.05) * sm.SE3.Ty(0.02) * sm.SE3.Tz(0.08)
 
 #Tet = robot.fkine(robot.q) * sm.SE3.Tx(0.05) * sm.SE3.Ty(0.02) * sm.SE3.Tz(0.01) *sm.SE3.RPY([0.1, 0.2, 0.1], order='xyz')
 #Tet = robot.fkine(robot.q) * sm.SE3.Tx(0.05) * sm.SE3.Ty(0.02) * sm.SE3.Tz(0.01) *sm.SE3.RPY([-1.57, 0.0, 0.0], order='xyz')

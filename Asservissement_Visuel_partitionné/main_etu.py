@@ -95,7 +95,7 @@ u4_des = -420.97
 v4_des = 421.03
 
 '''pi rotation in the image plane'''
-
+'''
 u1_des = 421.03
 v1_des = -421.08
 u2_des = -421.03
@@ -104,7 +104,7 @@ u3_des = -421.03
 v3_des = 420.97
 u4_des = 421.03
 v4_des = 420.97
-
+'''
 s_des = np.transpose(np.array([u1_des, v1_des, u2_des, v2_des, u3_des, v3_des, u4_des, v4_des]))
 
 fig, ax = pyplot.subplots()
@@ -198,6 +198,10 @@ print(A1)
 ''''''''''''''''''''''''''''''''''''''''''
 ''' Ne pas modifier '''
 ''''''''''''''''''''''''''''''''''''''''''
+
+
+#mp4 gif to do
+
 
 for i in range(duration):
 
@@ -329,6 +333,8 @@ for i in range(duration):
     u4_store = np.r_[u4_store, u4]
     v4_store = np.r_[v4_store, v4]
     time_store = np.r_[time_store, i * Te]
+
+    
 
 #
 fig.canvas.draw()
